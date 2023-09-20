@@ -13,6 +13,7 @@ int main()
     scanf("%d",&c);
 
     printf("(%dx^2) + (%dx) + (%d) = 0\n",a,b,c);
+   
     d=(b*b)-(4*a*c);
    
     n = sqrt(d);
@@ -21,10 +22,26 @@ int main()
     if(d>0||d==0)
     {
 
-      x1 = (-b+n)/(2*a);
-      x2 = (-b-n)/(2*a);
 
-     printf("x1 = %f\nx2 = %f",x1,x2); 
+        if(d>0)
+        {
+            x1 = (-b+n)/(2*a);
+            x2 = (-b-n)/(2*a);
+
+            printf("Roots are real and distinct \nx1 = %f\nx2 = %f",x1,x2); 
+
+
+        }
+
+        else
+        {
+
+               x1 = (-b+n)/(2*a);
+              x2 = (-b-n)/(2*a);
+
+               printf("Roots are real and same or equal\n x1 = %f\nx2 = %f",x1,x2); 
+        }
+     
  
     }
       
