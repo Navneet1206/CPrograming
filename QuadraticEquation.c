@@ -2,15 +2,14 @@
 #include<math.h>
 int main()
 {
-    int a,b,c;
-   float d,n,x1,x2;
-
+    float a,b,c,x1,x2,d,n;
+   
     printf("Enter Variable a : ");
-    scanf("%d",&a);
+    scanf("%f",&a);
     printf("Enter Variable b : ");
-    scanf("%d",&b);
+    scanf("%f",&b);
     printf("Enter Variable c : ");
-    scanf("%d",&c);
+    scanf("%f",&c);
 
     printf("(%dx^2) + (%dx) + (%d) = 0\n",a,b,c);
    
