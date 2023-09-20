@@ -2,38 +2,38 @@
 #include<math.h>
 int main()
 {
-    int a,b,c;
-   float d,n,x1,x2;
-
+    float a,b,c,x1,x2,d,n;
+   
     printf("Enter Variable a : ");
-    scanf("%d",&a);
+    scanf("%f",&a);
     printf("Enter Variable b : ");
-    scanf("%d",&b);
+    scanf("%f",&b);
     printf("Enter Variable c : ");
-    scanf("%d",&c);
+    scanf("%f",&c);
 
-    printf("(%dx^2) + (%dx) + (%d) = 0\n",a,b,c);
     d=(b*b)-(4*a*c);
    
     n = sqrt(d);
 
-
-    if(d>0||d==0)
+    if(d==0)
     {
-
-      x1 = (-b+n)/(2*a);
-      x2 = (-b-n)/(2*a);
-
-     printf("x1 = %f\nx2 = %f",x1,x2); 
- 
+        printf("roots are real and equal \n");
+        x1 = (-b+n)/(2*a);
+        x2 = (-b-n)/(2*a);
+        printf("%f & %f",x1,x2);
     }
-      
-      else
-      {
 
-        printf("Roots are emaginary ( Aukaat ke bahar )");
-     
-      }
+    else if(d>0)
+    {
+        printf("roots are real and different \n");
+        x1 = (-b+n)/(2*a);
+        x2 = (-b-n)/(2*a);
+        printf("%f & %f",x1,x2);
+    }
 
+    else
+    {
+        printf("roots are imaginary");
+    }
     return 0;
 }
