@@ -21,9 +21,6 @@ int main()
     x2 = (-b-n)/(2*a);
 
     
-  
-    
-    
     printf("x1 = %d\nx2 = %d",x1,x2);    
 
     return 0;
