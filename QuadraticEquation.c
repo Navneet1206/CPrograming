@@ -4,14 +4,14 @@ int main()
 {
     float a,b,c,x1,x2,d,n;
    
-    printf("Enter Variable a : ");
+    printf("Enter Coefficient a : ");
     scanf("%f",&a);
-    printf("Enter Variable b : ");
+    printf("Enter Coefficient b : ");
     scanf("%f",&b);
-    printf("Enter Variable c : ");
+    printf("Enter Coefficient c : ");
     scanf("%f",&c);
 
-    printf("(%dx^2) + (%dx) + (%d) = 0\n",a,b,c);
+    printf("(%fx^2) + (%fx) + (%f) = 0\n",a,b,c);
    
     d=(b*b)-(4*a*c);
    
@@ -47,7 +47,7 @@ int main()
       else
       {
 
-        printf("Roots are emaginary ( Aukaat ke bahar )");
+        printf("Roots are imaginary ( Aukaat ke bahar )");
      
       }
 
