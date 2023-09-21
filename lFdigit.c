@@ -8,16 +8,21 @@ int main()
     scanf("%d",&n);
      l=n%10;
  
-    for (i=0;i<=(n>=10);i++)
+    for (i=0;i<=n;i++)
     {
      c++;
      n=n/10;
     }
      
-   
     f=n;
+    
+    if(n<=10)
+    {
 
-    printf(" f = %d  \nl = %d",f,l);
+        f=n%10;
+  
+    }
+    printf("\nfirst digit  = %d  \nlast digit = %d",f,l);
     
    return 0;
 } 
